@@ -1,0 +1,180 @@
+/* Reset y estilos generales mejorados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Estilos del header */
+header {
+    background: rgba(0, 116, 217, 0.9);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0, 86, 163, 0.9);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background: #ff7b00;
+}
+
+/* Estilos de la sección principal */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #ff7b00;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+/* Diseño de artículos */
+article {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    border-left: 5px solid #ff7b00;
+}
+
+article:hover {
+    transform: scale(1.03);
+}
+
+article h3 {
+    color: #ff7b00;
+    margin-bottom: 10px;
+}
+
+/* Navegación entre páginas */
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.page-navigation a {
+    padding: 12px 20px;
+    background: #ff7b00;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.page-navigation a:hover {
+    background: #e66900;
+    transform: scale(1.05);
+}
+
+/* Botones de preguntas */
+.question-btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background: #ff7b00;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.question-btn:hover {
+    background: #e66900;
+}
+
+.answer-box {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 15px;
+    font-size: 1.1rem;
+    display: none;
+}
+
+/* Estilos mejorados para los enlaces de la sección de index */
+.section-card a {
+    display: inline-block;
+    background: linear-gradient(to right, #ff7b00, #ff4500);
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 10px rgba(255, 123, 0, 0.5);
+}
+
+.section-card a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 123, 0, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .question-btn {
+        font-size: 16px;
+    }
+    .page-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
