@@ -88,6 +88,25 @@ article h3 {
     margin-bottom: 10px;
 }
 
+/* Estilo mejorado para imágenes dentro de los artículos */
+article .image-container {
+    text-align: center;
+    margin-top: 15px;
+}
+
+article .image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 123, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+article .image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(255, 123, 0, 0.7);
+}
+
 /* Navegación entre páginas */
 .page-navigation {
     display: flex;
